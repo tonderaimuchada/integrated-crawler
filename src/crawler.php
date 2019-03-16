@@ -1,22 +1,16 @@
-<script>
-  function buttonClicked() {
-    alert("testing output");
-    $.ajax({
-      type: "GET",
-      url: "src/crawler.php",
-      data: { h: "michael" },
-      success: function () {
+<?php
+print("testing output");
+echo("testing output");
+print_r("testing output");
 
-        // here is the code that will run on client side after running clear.php on server
+$message = "wrong answer";
+echo "<script type='text/javascript'>alert('$message');</script>";
 
-        // function below reloads current page
-        // location.reload();
-        echo('u gud tonde');
+echo '<script language="javascript">';
+echo 'alert("message successfully sent")';
+echo '</script>';
+?>
 
-      }
-    });
-  }
-</script>
 <!doctype html>
 <html lang="en">
 
@@ -33,14 +27,13 @@
 </head>
 
 <body>
-  <form>
+  <form action="crawler.php" method="post">
     <div class="wrap">
       <div class="search">
         <input type="text" id="searchText" class="searchTerm" placeholder="What are you looking for?">
         <button type="submit" id="searchButton" class="searchButton" onclick="buttonClicked()">
           <i class="fa fa-search"></i>
         </button>
-        <a href="src/crawler.php">link</a>
       </div>
     </div>
   </form>
