@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+.crawler{
+  text-align: center;
+  padding-top: 190px;
+}
+.trademark{
+  padding-left: 50em;
+  margin-top: -45px;
+}
 body{
   background: light-grey;
   font-family: 'Open Sans', sans-serif;
