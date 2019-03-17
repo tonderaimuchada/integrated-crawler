@@ -1,6 +1,5 @@
 <script>
   function buttonClicked() {
-    alert("testing output");
     $.ajax({
       type: "GET",
       url: "src/crawler.php",
@@ -11,8 +10,7 @@
 
         // function below reloads current page
         // location.reload();
-        echo('u gud tonde');
-
+        alert("Testing successful output");
       }
     });
   }
@@ -33,11 +31,10 @@
 </head>
 
 <body>
-  <div>
-    <h1 class="crawler">Focused Crawler</h1>
-    <p class="trademark">&#169; 2019</p>
+  <div class="logo">
+    <h2>Focused Crawler</h2>
   </div>
-  <form>
+  <form class="search-field">
     <div class="wrap">
       <div class="search">
         <input type="text" id="searchText" class="searchTerm" placeholder="What are you looking for?">
@@ -47,6 +44,35 @@
       </div>
     </div>
   </form>
+  <div class="results">
+    <div class="item">
+      <div href="#">
+        <a href="#" class="title">EL SOB</a><br />
+        <a href="home/Documents/School/Part 4/4.1/SCS 4100 - Project/Crawler/SW/Bands/1.html"
+          class="links url">home/Documents/School/Part 4/4.1/SCS 4100 - Project/Crawler/SW/Bands/1.html</a>
+      </div>
+      <a>
+        <!-- if more than 200 characters, use ... after the 200th one -->
+        Description Description Description Description Description Description Description
+        Description Description Description Description Description Description Description
+        Description Description Description ...
+      </a>
+    </div>
+    <br />
+    <div class="item">
+      <div href="#">
+        <a href="#" class="title">EL SOB</a><br />
+        <a href="home/Documents/School/Part 4/4.1/SCS 4100 - Project/Crawler/SW/Bands/1.html"
+          class="links url">home/Documents/School/Part 4/4.1/SCS 4100 - Project/Crawler/SW/Bands/1.html</a>
+      </div>
+      <a>
+        <!-- if more than 200 characters, use ... after the 200th one -->
+        Description Description Description Description Description Description Description
+        Description Description Description Description Description Description Description
+        Description Description Description ...
+      </a>
+    </div>
+  </div>
 
   <!-- <app-root></app-root> -->
 </body>

@@ -1,7 +1,5 @@
 <?php
-print("testing output");
-echo("testing output");
-print_r("testing output");
+echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
 
 $message = "wrong answer";
 echo "<script type='text/javascript'>alert('$message');</script>";
