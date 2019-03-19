@@ -1,20 +1,3 @@
-<script>
-  function buttonClicked() {
-    $.ajax({
-      type: "GET",
-      url: "src/crawler.php",
-      data: { h: "michael" },
-      success: function () {
-
-        // here is the code that will run on client side after running clear.php on server
-
-        // function below reloads current page
-        // location.reload();
-        alert("Testing successful output");
-      }
-    });
-  }
-</script>
 <!doctype html>
 <html lang="en">
 
@@ -34,11 +17,11 @@
   <div class="logo">
     <h2>Focused Crawler</h2>
   </div>
-  <form class="search-field">
+  <form class="search-field" method="POST" action="crawler.php">
     <div class="wrap">
       <div class="search">
         <input type="text" id="searchText" class="searchTerm" placeholder="What are you looking for?">
-        <button type="submit" id="searchButton" class="searchButton" onclick="buttonClicked()">
+        <button type="submit" id="searchButton" class="searchButton">
           <i class="fa fa-search"></i>
         </button>
       </div>
