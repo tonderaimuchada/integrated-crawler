@@ -10,7 +10,23 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href = "src/css/font-awesome.css"> -->
   <link rel="stylesheet" href="src/components/home/home.component.css">
+  <script src="src/index.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="src/jquery-1.7.1.min.js" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    $('#demo').pagination({
+      dataSource: [1, 2, 3, 4, 5, 6, 7, 8],
+      pageSize: 5,
+      autoHidePrevious: true,
+      autoHideNext: true,
+      callback: function (data, pagination) {
+        // template method of yourself
+        var html = template(data);
+        dataContainer.html(html);
+      }
+    })
+  </script>
 </head>
 
 <body>
@@ -27,7 +43,7 @@
       </div>
     </div>
   </form>
-  <div class="results">
+  <div class="results" id="demo">
     <div class="item">
       <div href="#">
         <a href="#" class="title">Clinical and Diagnostic Laboratory Immunology</a><br />
