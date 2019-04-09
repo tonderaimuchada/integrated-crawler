@@ -11,22 +11,11 @@
   <!-- <link rel="stylesheet" href = "src/css/font-awesome.css"> -->
   <link rel="stylesheet" href="src/components/home/home.component.css">
   <script src="src/index.js" type="text/javascript"></script>
+  <!-- <script src="src/bootstrap.js" type="text/javascript"></script> -->
   <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
   <script src="src/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <!-- <link rel="stylesheet" href="src/bootstrap.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript">
-    $('#demo').pagination({
-      dataSource: [1, 2, 3, 4, 5, 6, 7, 8],
-      pageSize: 5,
-      autoHidePrevious: true,
-      autoHideNext: true,
-      callback: function (data, pagination) {
-        // template method of yourself
-        var html = template(data);
-        dataContainer.html(html);
-      }
-    })
-  </script>
 </head>
 
 <body>
@@ -37,17 +26,39 @@
     <div class="wrap">
       <div class="search">
         <input type="text" id="searchText" class="searchTerm" placeholder="What are you looking for?">
-        <button type="submit" id="searchButton" class="searchButton">
+        <button type="submit" id="searchButton" class="searchButton" name="search">
           <i class="fa fa-search"></i>
         </button>
       </div>
     </div>
   </form>
+  <!-- <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
   <div class="results" id="demo">
     <div class="item">
       <div href="#">
         <a href="#" class="title">Clinical and Diagnostic Laboratory Immunology</a><br />
-        <a href="/home/tonderaim/Documents/School/Part 4/4.1/SCS 4100 - Project/Crawler/SW/BioMedical/19.html"
+        <a href="file:///home/tonderaim/Documents/School/Part 4/4.1/SCS 4100 -
+        Project/Crawler/SW/BioMedical/19.html"
           class="links url">/home/tonderaim/Documents/School/Part 4/4.1/SCS 4100 -
           Project/Crawler/SW/BioMedical/19.html</a>
       </div>
